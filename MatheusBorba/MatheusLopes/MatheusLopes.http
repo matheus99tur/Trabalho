@@ -1,0 +1,37 @@
+
+
+POST http://localhost:5083/api/funcionario/cadastrar
+Content-Type: application/json
+
+{
+    "Nome" : "Maria",
+    "Cpf" : "913751357"
+}
+
+###
+
+GET http://localhost:5083/api/produto/listar
+
+###
+
+GET http://localhost:5083/api/folha/pagamento/listar
+
+###
+POST http://localhost:5083/api/folha/cadastrar
+Content-Type: application/json
+
+{
+    "Valor" : "6536",
+    "Quantidade": "65463",
+    "Mes": "1001",
+    "Ano": "38738",
+    "SalarioBruto":"9090",
+    "impostoIrrf": 12,
+    "impostoInss": 12,
+    "salarioliquido": 100
+}
+
+
+###
+GET http://localhost:5083/api/folha/buscar/62dd7a27-bc2b-4cec-845b-76ce930bb23a
+
